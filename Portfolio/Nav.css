@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins","Baloo Bhai 2", serif;
+}
+
+a{
+    text-decoration: none;
+}
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url("Assets/Images/back.jpg");
+    filter: invert(1) blur(2px);
+} */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    box-shadow: 1px 0 2px grey;
+    padding: 10px 0 10px 0;
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav ul li {
+    color: black;
+    list-style: none;
+    padding: 0 23px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* nav ul li:hover{
+    background-color: rgb(31, 28, 194);
+    color:white
+} */
+
+.logo {
+    display: inline;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+}
+
+main .Mypic {
+    border-radius: 50%;
+    height: 40vmax;
+    width: auto;
+    padding: 7px 0 0 0;
+}
+
+main .contain {
+    position: relative;
+    top: 20px;
+}
+
+main>.contain> :nth-child(1) {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+main>.contain> :nth-child(2) {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+main>.contain> :nth-child(3) {
+    font-size: 30px;
+}
+
+main>.contain button {
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(31, 28, 194);
+    padding: 12px 50px 14px 47px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 52px;
+    box-shadow: 2px 2px 5px rgb(31, 28, 194);
+    cursor: pointer;
+}
+
+main>.contain button:hover{
+    background-color: rgb(25, 23, 155);
+}
+main>.contain button:active{
+    background-color: rgb(15, 13, 100);
+}
+
+@media screen and (max-width:1100px) {
+
+    nav ul li {
+        color: black;
+        list-style: none;
+        font-size: 10px;
+        padding: 0 5px;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    main .contain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main>.contain> :nth-child(1) {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    main>.contain> :nth-child(2) {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    main>.contain> :nth-child(3) {
+        font-size: 15px;
+    }
+
+    .logo {
+        display: none;
+    }
+}

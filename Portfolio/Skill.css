@@ -1,0 +1,61 @@
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main>h1{
+    text-align: center;
+    padding: 35px;
+    box-sizing: border-box;
+}
+main>.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+}
+main>.container span{
+    padding: 34px 34px;
+}
+main>.container img{
+    height: 40vh;
+    border-radius: 40px;
+}
+main>.container:nth-child(odd){
+    flex-direction: row-reverse;
+}
+main>.container>span>:nth-child(1){
+    font-size: 28px;
+}
+main>.container>span>:nth-child(2){
+    font-size: 15px;
+}
+
+@media screen and (max-width:1100px) {
+    main>.container img{
+        height: 30vmin;
+        border-radius: 20px;
+    }
+    main>.container>span>:nth-child(1){
+        font-size: 25px;
+    }
+    main>.container>span>:nth-child(2){
+        font-size: 15px;
+    }
+    main>.container span{
+        padding: 17px 17px;
+    }
+}
+@media screen and (max-width:700px) {
+    main>.container>span>:nth-child(1){
+        font-size: 15px;
+    }
+    main>.container>span>:nth-child(2){
+        font-size: 5px;
+    }
+    main>.container span{
+        padding: 17px 17px;
+    }
+}
